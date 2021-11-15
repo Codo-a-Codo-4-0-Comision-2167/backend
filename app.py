@@ -31,3 +31,7 @@ while isRunning:
         #print("Se agrego",command[2],"en el indice",command[1])
 
 
+# En Javascript teniamos las arrow functions que eran anonimas
+#myFuncion = (x) => x**2
+
+myFuncion = lambda x: x**2
