@@ -1,7 +1,7 @@
 import json
 from src.utils import contarPares
 from src.utils import comparoLista
-
+from src.utils import replaceSpaceByGuion
 
 x = 10
 
@@ -73,3 +73,6 @@ n1, n2, n3, n4, n5 = listaA
 
 print(n1)
 
+stringDePrueba="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+replaced = replaceSpaceByGuion(stringDePrueba)
+print(replaced)

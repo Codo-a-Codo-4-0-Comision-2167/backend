@@ -22,3 +22,8 @@ def comparoLista( a, b):
     comparasion = 1
 
   return comparasion
+
+
+def replaceSpaceByGuion(string):
+    """ Funcion que reemplaza los espacios por guiones """
+    return string.replace(" ","-")
