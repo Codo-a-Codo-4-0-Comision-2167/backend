@@ -50,3 +50,6 @@ El usuario tiene objeto carrito de compras.
 El administrador puede ver a todos los usuarios y lo que tenga adentro.
 El reporter solo ve todos los carritos de compra.
 
+5- Escribir una nueva class que herede de server.py y que maneje la conexion con el cliente y repita el mensaje enviado por el cliente.
+
+6- Escribir una nueva class que herede de server.py y que maneje solo informacion en JSON.
