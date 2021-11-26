@@ -3,6 +3,6 @@ class Producto:
         self.nombre = nombre
         self.precio = precio
         self.cantidad = cantidad
-    
+
     def damePrecio(self):
         return self.precio 

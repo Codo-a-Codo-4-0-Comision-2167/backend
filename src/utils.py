@@ -1,3 +1,9 @@
+from decorators import checkPositive
+from decorators import myDecorator
+from Gato import Gato
+from Animal import Animal
+from Factory import Factory
+
 def contarPares(n):
     """ Funcion que cuenta pares hasta n """
     contador = [] # Es un array vacio...
@@ -23,7 +29,36 @@ def comparoLista( a, b):
 
   return comparasion
 
-
 def replaceSpaceByGuion(string):
     """ Funcion que reemplaza los espacios por guiones """
     return string.replace(" ","-")
+
+#@myDecorator
+@checkPositive
+def fibonacci(n):
+    """ Funcion que calcula el fibonacci """
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# __name__ nos ayuda a identificar si el script python
+# que se esta ejecutando es el principal.
+if __name__ == '__main__':
+    print(fibonacci(10))
+    try:
+      print(fibonacci(-1))
+    except Exception as e:
+      print(e)
+    
+    myCat = Gato("Gato")
+    myCat.speak()
+
+    #myAnimal = Animal("Animal")
+    #myAnimal.speak()
+
+    myNewCat = Factory.creadorDeAnimales("Gato")
+
+    print(myNewCat.speak())
